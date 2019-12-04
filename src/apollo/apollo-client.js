@@ -2,7 +2,7 @@ import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 
-const TOKEN = '15d0d1a90dc325e2bff18bfd6e70e17216aae9ea';
+const TOKEN = '5a5d5a17c31f627ee5ee320aefc23f62625bd663';
 
 const client = new ApolloClient({
   link: createHttpLink({ 
