@@ -13,7 +13,7 @@ const CardList = () => {
         {
           cards.map((repository,idx) => (
             <CardItem 
-            key={`${repository.id}-${idx}`}
+            key={repository.id}
             repository={repository}
             />
             ))

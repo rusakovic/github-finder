@@ -3,10 +3,15 @@ const cardsReducer = (state, action) => {
     case 'POPULATE_CARDS':
       return action.cards
     case 'ADD_CARD':
-      return [
-        ...state,
-        action.card 
-      ]
+      const findDuplicate = state.some((card) => card.id === action.card.id)
+      if (findDuplicate) {
+        return [ ...state]
+      } else {
+        return [
+          ...state,
+          action.card 
+        ]
+      }
     case 'REMOVE_CARD':
       return state.filter((card) => card.id !== action.id)
     default:
