@@ -1,0 +1,55 @@
+.card-list-container {
+  h2 {
+    text-align: center;
+    font-weight: 300;
+  }
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+    color: $dark-grey;
+    &:hover {
+      color: $grey;
+    }
+
+  }
+}
+
+.card-item {
+  border: 1px solid $off-white;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 23.5%;
+  margin: 5px;
+  img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  &:hover {
+    background: $off-white;
+  }
+}
+
+.card-item__user {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card-item__repository {
+  @extend .card-item__user;
+
+  h5 {
+    margin: 0;
+    font-weight: 100;
+    word-break: break-all;
+  }
+  h3 {
+    margin: 1rem;
+    word-break: break-all;
+  }
+
+}

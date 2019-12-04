@@ -1,0 +1,32 @@
+.button {
+  background-color:  $google-blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  height: 48px;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+
+
+.button--secondary {
+  height: 48px;
+  background-color: #b8b8b8;
+  &:hover {
+    background-color: $grey;
+  }
+}
+
+.button--remove {
+  background-color: transparent;
+  color: #b8b8b8;
+  height: 20px;
+  margin-left: 83%;
+  padding: 0 8px;
+  &:hover {
+    color: black;
+  }
+}
