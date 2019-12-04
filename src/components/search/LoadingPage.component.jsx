@@ -6,7 +6,7 @@ const LoadingPage = () => {
      <img 
       className="loader__image" 
       alt="loading-spinner" 
-      src="/images/loader.gif" 
+      src="%PUBLIC_URL%/images/loader.gif" 
     />
     </div>
   )
